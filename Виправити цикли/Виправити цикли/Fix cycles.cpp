@@ -1,11 +1,11 @@
 ﻿#include <iostream>
 using namespace std;
 
+//work by Abramans
 
 int main()
 {
-	//For 15. Дано вещественное число A и целое число N(> 0).Найти A в степени N :
-//A^N = A·A· . ..·A (числа A перемножаются N раз).
+	//For 15
 	//double A = 1.4;
 	//int N = 5;
 	//int S = 1;

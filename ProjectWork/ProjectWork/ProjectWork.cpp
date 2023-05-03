@@ -4,6 +4,37 @@ using namespace std;
 
 int main()
 {
+	//Квадрат 5 на 5.
+	int N = 5;
+	int S = 0, P = 0; //накопитель.
+	int nak = 0;//отвечает за накопление точок
+
+
+	for (int k = 0; k < 2; k++)
+	{
+		for (int j = 0; j < N; j++)
+		{
+			for (int i = 0; i < N; i++)//за отступ
+			{
+				cout << "   ." ;
+				nak++;
+			}
+			for (int i = 0; i < j - j; i++)
+			{
+				cout << "   .";
+				nak++;
+			}
+			cout << "\n"; 
+			P++;
+		}
+		S++;
+	}
+	cout << "\n\tОбщее кол-во квадратов: " << S << endl;
+	cout << "\tОбщее кол-во строк: " << P << endl;
+	cout << "\tОбщее кол-во точек: " << nak << endl;
+	
+	
+	
 	//While 15
 	//Начальный вклад в банке равен 1000 руб.
 	//Через каждый месяц размер вклада увеличивается на P процентов от имеющейся суммы
@@ -61,22 +92,39 @@ int main()
 	//имеет положительных делителей, кроме 1 и самого себя,
 	//то вывести TRUE, иначе вывести FALSE
 
-	//int N = 82;
-	//bool opel = false;
-	//while (N > 1)
-	//{	
-	//	for (int i = 1; i <= N; i++) 
+	//1. Вариант: 
+		//int N = 17;
+	//int i = 2;
+
+	//while (i < N)
+	//{
+	//	if (N % i == 0)
 	//	{
-	//		if (N % i == 0)
-	//		{
-	//			opel = true;
-	//			cout << "true";
-	//			break;
-	//		}
+	//		cout << "false";
+	//		break;
 	//	}
-	//break;
+	//	i++;
 	//}
-	//if (opel == false)
+	//if (i == N)
+	//{
+	//	cout << "true";
+	//}
+	
+	//2. Вариант с приминением for
+	//int N = 82;
+	//bool al = false;
+	//
+	//for (int i = 1; i <= N; i++) 
+	//{
+	//	if (N % i == 0)
+	//	{
+	//		al = true;
+	//		cout << "true";
+	//		break;
+	//	}
+	//	
+	//}
+	//if (al == false)
 	//{
 	//	cout << "false";
 	//}
